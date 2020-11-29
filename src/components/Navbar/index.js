@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './style.css';
-
+import Search from '../../assets/icons/search.png';
 /**
 * @author
 * @function Navbar
@@ -37,7 +37,7 @@ const Navbar = (props) => {
         <div className="search">
             <form onSubmit={submitSearch}>
                 <input type="text" className={searchClass} placeholder="Search" />
-                <img onClick={openSearch} className="searchIcon" src={require('../../assets/icons/search.png')} alt="Search" />
+                <img onClick={openSearch} className="searchIcon" src={Search} alt="Search" />
             </form>
             
         </div>
