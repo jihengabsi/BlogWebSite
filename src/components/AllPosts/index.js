@@ -7,6 +7,7 @@ import {
     CardTitle, CardSubtitle, Button
   } from 'reactstrap';
   import { Grid, Row, Col } from 'react-flexbox-grid';
+  import logo from '../../blogPostImages/PVC-Expomoda-0005-Dark-Grey.jpg';
 /**
 * @author
 * @function AllPosts
@@ -37,7 +38,7 @@ const AllPosts = (props) => {
                                 <div>
                                     
                                 <Card>
-                                <CardImg top width="50%"  src={require('../../blogPostImages/' + post.blogImage)} alt="Post Image" />
+                                <CardImg top width="50%" src={logo} alt="Post Image" />
                                 <CardBody>
                                   <CardTitle tag="h5">{post.blogTitle}</CardTitle>
                                   <CardSubtitle tag="h6" className="mb-2 text-muted">{post.postedOn}</CardSubtitle>
